@@ -9,6 +9,13 @@
 </head>
 
 <body>
+    <!--We strart with our first table, adding a css tag border-collape: collapse to prevent some browsers from adding blank spaces between sections
+     We also add all our styles using only inline css tags. Remember the golden rule when creating responsive emails is when there is the possibility
+     to use inline css you should do so --
+     <th> means "table header>
+     <tr> means "table row>
+     <td> means "table data also known as cell" -->
+     <!-- we will not use cellspading and cellspacing tags as it has been depreciated in HTML5 use border-collapse instead -->
      <table style="width: 600px; text-align: center; border-collapse: collapse; border-top: 2px dotted #c17b09; margin: 0 auto 30px auto;">
           <caption style="text-align:center">
                <strong>Try out a New Soap & Enjoy the Enchanting Fragrance |</strong>
@@ -68,6 +75,7 @@
           <tr>
                <td style="padding-bottom:60px">
                     <p style="margin-left:5px; font-family:sans-serif;">
+        <!-- just some text so back-end could indivdualy address the customer by adding his data -->
                          Hey*|IF:FNAME|**|FNAME|*!*|ELSE|* there!*|END:IF|*
                          <br> Is it time for a fresh batch of handmade, all-natural soaps? Why?, yes it is!<br> It's been quite a while since you last shopped in <a href="#" style="color:#c17b09;">our store</a> and your<br> supplies have to be running
                          low. Click the button down below to visit our website, and try our some new, interesting aromas. All of our <br> products are made with the same quality materials, so you can never <br> go wrong!<br>
